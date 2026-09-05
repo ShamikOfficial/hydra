@@ -7,7 +7,7 @@ import warnings
 from logging import getLogger
 from pathlib import Path
 from textwrap import dedent
-from typing import Any, Dict, List, Optional, Set
+from typing import Any, List, Optional, Set
 
 from omegaconf import DictConfig, OmegaConf
 from pytest import mark, param, raises, warns
@@ -1638,7 +1638,7 @@ def test_app_with_unicode_config(tmpdir: Path) -> None:
         "hydra.job.chdir=True",
     ]
     out, _ = run_python_script(cmd)
-    assert out == "config: 数据库"
+    assert out == "config: æ•°æ®åº“"
 
 
 @mark.parametrize(
