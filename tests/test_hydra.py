@@ -7,7 +7,7 @@ import warnings
 from logging import getLogger
 from pathlib import Path
 from textwrap import dedent
-from typing import Any, List, Optional, Set
+from typing import Any, Dict, List, Optional, Set
 
 from omegaconf import DictConfig, OmegaConf
 from pytest import mark, param, raises, warns
@@ -1982,3 +1982,61 @@ def test_hydra_runtime_choice_1882(tmpdir: Path) -> None:
         from_name="Expected output",
         to_name="Actual output",
     )
+
+
+def test_multirun_hydra_config_available_for_controller(tmpdir: Path) -> None:
+    """Regression for #3427: controller-side ${hydra:...} must resolve in multirun."""
+    cmd = [
+        "tests/test_apps/multirun_hydra_resolver_in_sweeper_params/my_app.py",
+        "--multirun",
+        f"hydra.sweep.dir={tmpdir}",
+        "hydra.job.chdir=False",
+        "hydra.hydra_logging.formatters.simple.format='[HYDRA] %(message)s'",
+        "hydra.job_logging.formatters.simple.format='[JOB] %(message)s'",
+    ]
+    expected_cwd = str(Path.cwd())
+    expected_output = dedent(f"""
+                controller_cwd={expected_cwd}
+                [HYDRA] Launching 1 jobs locally
+                [HYDRA] \t#0 : value={__version__}
+                value={__version__}
+                job_id=0
+                job_num=0""")
+
+    out, _ = run_python_script(cmd)
+    assert_regex_match(
+        from_line=expected_output,
+        to_line=out,
+        from_name="Expected output",
+        to_name="Actual output",
+    )
+
+
+def test_multirun_restores_hydra_config_after_controller(
+    hydra_restore_singletons: Any,
+    hydra_sweep_runner: TSweepRunner,
+    tmpdir: Path,
+) -> None:
+    """Controller HydraConfig must be restored when the multirun finishes."""
+    from hydra.core.hydra_config import HydraConfig
+
+    assert not HydraConfig.initialized()
+
+    def task(cfg: DictConfig) -> None:
+        # Jobs must see job-specific Hydra configuration.
+        assert HydraConfig.initialized()
+        assert HydraConfig.get().job.id == "0"
+        assert HydraConfig.get().job.num == 0
+
+    with hydra_sweep_runner(
+        calling_file="tests/test_apps/simple_app/my_app.py",
+        calling_module=None,
+        config_path=None,
+        config_name=None,
+        task_function=task,
+        overrides=["+x=1"],
+        temp_dir=tmpdir,
+    ):
+        pass
+
+    assert not HydraConfig.initialized()
