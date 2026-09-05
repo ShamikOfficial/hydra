@@ -792,3 +792,4 @@
 {"ts": "2026-09-05T17:19:06Z", "kind": "new", "issue": 3438, "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3438", "title": "Improve type safety of Hydra logging configurations"}
 {"ts": "2026-09-05T17:23:27Z", "kind": "label", "issue": 3066, "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3066", "title": "[Feature Request] Logging config to include `loggers` as well as `root` (suggested solution)", "detail": "removed \"triage\""}
 {"ts": "2026-09-05T17:30:28Z", "kind": "closed", "issue": 3064, "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3064", "title": "[Feature Request] No sweepers are compatible with python >3.10 (NeverGrad, Ax, Optuna)"}
+{"ts": "2026-09-05T17:33:44Z", "kind": "closed", "issue": 3055, "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3055", "title": "[Feature Request] -- is there a way to sweep in nested folder inside config group?"}
