@@ -1,27 +1,27 @@
 {
   "generated_on": "2026-09-05",
-  "generated_at": "2026-09-05T18:15:00Z",
+  "generated_at": "2026-09-05T19:42:19Z",
   "repo": "hydra-ecosystem/hydra",
   "summary": {
-    "open_total": 81,
+    "open_total": 80,
     "by_category": [
       {
         "category": "Bug",
         "emoji": "🐛",
         "count": 8,
-        "percentage": 9.9
+        "percentage": 10.0
       },
       {
         "category": "Enhancement",
         "emoji": "✨",
         "count": 60,
-        "percentage": 74.1
+        "percentage": 75.0
       },
       {
         "category": "Documentation",
         "emoji": "📄",
         "count": 6,
-        "percentage": 7.4
+        "percentage": 7.5
       },
       {
         "category": "Question",
@@ -33,13 +33,13 @@
         "category": "Refactor",
         "emoji": "🔧",
         "count": 3,
-        "percentage": 3.7
+        "percentage": 3.8
       },
       {
         "category": "Build",
         "emoji": "🏗️",
-        "count": 3,
-        "percentage": 3.7
+        "count": 2,
+        "percentage": 2.5
       }
     ],
     "by_status": [
@@ -61,12 +61,12 @@
       {
         "status": "not started",
         "emoji": "⬜",
-        "count": 80
+        "count": 79
       },
       {
         "status": "done",
         "emoji": "✅",
-        "count": 45
+        "count": 46
       }
     ]
   },
@@ -783,21 +783,6 @@
         "triage"
       ],
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3002"
-    },
-    {
-      "number": 3011,
-      "title": "New release of hydra-colorlog?",
-      "category": "Build",
-      "category_emoji": "🏗️",
-      "status": "not started",
-      "status_emoji": "⬜",
-      "prs": [],
-      "created": "2025-01-20",
-      "updated": "2026-07-15",
-      "labels": [
-        "triage"
-      ],
-      "url": "https://github.com/hydra-ecosystem/hydra/issues/3011"
     },
     {
       "number": 3066,
@@ -1747,6 +1732,22 @@
       "url": "https://github.com/hydra-ecosystem/hydra/issues/2981"
     },
     {
+      "number": 3012,
+      "title": "[Feature Request] It might be useful to have a utility function for integration testing pipelines built with Hydra that expose command line interfaces through config files.",
+      "category": "Enhancement",
+      "category_emoji": "✨",
+      "status": "done",
+      "status_emoji": "✅",
+      "prs": [],
+      "created": "2025-01-21",
+      "updated": "2026-07-15",
+      "labels": [
+        "enhancement",
+        "triage"
+      ],
+      "url": "https://github.com/hydra-ecosystem/hydra/issues/3012"
+    },
+    {
       "number": 3015,
       "title": "[Feature Request] Support Instantiation of User Plugins Without Special Module",
       "category": "Enhancement",
@@ -2049,23 +2050,29 @@
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3436"
     },
     {
-      "number": 3012,
-      "title": "[Feature Request] It might be useful to have a utility function for integration testing pipelines built with Hydra that expose command line interfaces through config files.",
-      "category": "Enhancement",
-      "category_emoji": "✨",
+      "number": 3011,
+      "title": "New release of hydra-colorlog?",
+      "category": "Build",
+      "category_emoji": "🏗️",
       "status": "done",
       "status_emoji": "✅",
       "prs": [],
-      "created": "2025-01-21",
+      "created": "2025-01-20",
       "updated": "2026-07-15",
       "labels": [
-        "enhancement",
         "triage"
       ],
-      "url": "https://github.com/hydra-ecosystem/hydra/issues/3012"
+      "url": "https://github.com/hydra-ecosystem/hydra/issues/3011"
     }
   ],
   "updates": [
+    {
+      "ts": "2026-09-05T19:42:19Z",
+      "kind": "closed",
+      "issue": 3011,
+      "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3011",
+      "title": "New release of hydra-colorlog?"
+    },
     {
       "ts": "2026-09-05T18:15:00Z",
       "kind": "closed",
@@ -3659,18 +3666,6 @@
       "issue_url": "https://github.com/facebookresearch/hydra/issues/1749",
       "title": "tests: Use multiline regex search instead of assert_regex_match",
       "detail": "linked #3327"
-    },
-    {
-      "ts": "2026-07-30T07:50:43Z",
-      "kind": "status",
-      "issue": 1749,
-      "issue_url": "https://github.com/facebookresearch/hydra/issues/1749",
-      "title": "tests: Use multiline regex search instead of assert_regex_match",
-      "detail": "not started → community PR",
-      "pr": {
-        "number": 3327,
-        "url": "https://github.com/facebookresearch/hydra/pull/3327"
-      }
     }
   ]
 }
