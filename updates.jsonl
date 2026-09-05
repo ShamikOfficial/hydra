@@ -790,3 +790,4 @@
 {"ts": "2026-09-05T15:18:42Z", "kind": "label", "issue": 2814, "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/2814", "title": "[Feature Request] Allow setting use_srun from submitit launcher", "detail": "removed \"triage\""}
 {"ts": "2026-09-05T15:43:24Z", "kind": "label", "issue": 3082, "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3082", "title": "[Feature Request] `submitit` Multirun without sweeping", "detail": "removed \"triage\""}
 {"ts": "2026-09-05T17:19:06Z", "kind": "new", "issue": 3438, "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3438", "title": "Improve type safety of Hydra logging configurations"}
+{"ts": "2026-09-05T17:23:27Z", "kind": "label", "issue": 3066, "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3066", "title": "[Feature Request] Logging config to include `loggers` as well as `root` (suggested solution)", "detail": "removed \"triage\""}

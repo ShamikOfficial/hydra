@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-09-05",
-  "generated_at": "2026-09-05T17:19:06Z",
+  "generated_at": "2026-09-05T17:23:27Z",
   "repo": "hydra-ecosystem/hydra",
   "summary": {
     "open_total": 86,
@@ -888,10 +888,9 @@
       "status_emoji": "⬜",
       "prs": [],
       "created": "2025-05-27",
-      "updated": "2026-05-16",
+      "updated": "2026-09-05",
       "labels": [
-        "enhancement",
-        "triage"
+        "enhancement"
       ],
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3066"
     },
@@ -2067,6 +2066,14 @@
     }
   ],
   "updates": [
+    {
+      "ts": "2026-09-05T17:23:27Z",
+      "kind": "label",
+      "issue": 3066,
+      "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3066",
+      "title": "[Feature Request] Logging config to include `loggers` as well as `root` (suggested solution)",
+      "detail": "removed \"triage\""
+    },
     {
       "ts": "2026-09-05T17:19:06Z",
       "kind": "new",
@@ -3666,13 +3673,6 @@
       "issue": 2351,
       "issue_url": "https://github.com/facebookresearch/hydra/issues/2351",
       "title": "[Feature Request] Possibility to save full start command in separate file"
-    },
-    {
-      "ts": "2026-07-29T04:40:10Z",
-      "kind": "new",
-      "issue": 3326,
-      "issue_url": "https://github.com/facebookresearch/hydra/issues/3326",
-      "title": "Add a Reploy launcher for immutable, reproducible job execution"
     }
   ]
 }
