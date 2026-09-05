@@ -1,27 +1,27 @@
 {
   "generated_on": "2026-09-05",
-  "generated_at": "2026-09-05T17:33:44Z",
+  "generated_at": "2026-09-05T17:45:12Z",
   "repo": "hydra-ecosystem/hydra",
   "summary": {
-    "open_total": 84,
+    "open_total": 83,
     "by_category": [
       {
         "category": "Bug",
         "emoji": "🐛",
         "count": 8,
-        "percentage": 9.5
+        "percentage": 9.6
       },
       {
         "category": "Enhancement",
         "emoji": "✨",
-        "count": 63,
-        "percentage": 75.0
+        "count": 62,
+        "percentage": 74.7
       },
       {
         "category": "Documentation",
         "emoji": "📄",
         "count": 6,
-        "percentage": 7.1
+        "percentage": 7.2
       },
       {
         "category": "Question",
@@ -61,12 +61,12 @@
       {
         "status": "not started",
         "emoji": "⬜",
-        "count": 83
+        "count": 82
       },
       {
         "status": "done",
         "emoji": "✅",
-        "count": 42
+        "count": 43
       }
     ]
   },
@@ -830,22 +830,6 @@
         "triage"
       ],
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3015"
-    },
-    {
-      "number": 3026,
-      "title": "[Feature Request] Allow for defaults list `override` to update the ordering of defaults?",
-      "category": "Enhancement",
-      "category_emoji": "✨",
-      "status": "not started",
-      "status_emoji": "⬜",
-      "prs": [],
-      "created": "2025-02-12",
-      "updated": "2026-07-15",
-      "labels": [
-        "enhancement",
-        "triage"
-      ],
-      "url": "https://github.com/hydra-ecosystem/hydra/issues/3026"
     },
     {
       "number": 3066,
@@ -1795,6 +1779,22 @@
       "url": "https://github.com/hydra-ecosystem/hydra/issues/2981"
     },
     {
+      "number": 3055,
+      "title": "[Feature Request] -- is there a way to sweep in nested folder inside config group?",
+      "category": "Enhancement",
+      "category_emoji": "✨",
+      "status": "done",
+      "status_emoji": "✅",
+      "prs": [],
+      "created": "2025-04-15",
+      "updated": "2026-05-16",
+      "labels": [
+        "enhancement",
+        "triage"
+      ],
+      "url": "https://github.com/hydra-ecosystem/hydra/issues/3055"
+    },
+    {
       "number": 3064,
       "title": "[Feature Request] No sweepers are compatible with python >3.10 (NeverGrad, Ax, Optuna)",
       "category": "Enhancement",
@@ -2049,23 +2049,30 @@
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3436"
     },
     {
-      "number": 3055,
-      "title": "[Feature Request] -- is there a way to sweep in nested folder inside config group?",
+      "number": 3026,
+      "title": "[Feature Request] Allow for defaults list `override` to update the ordering of defaults?",
       "category": "Enhancement",
       "category_emoji": "✨",
       "status": "done",
       "status_emoji": "✅",
       "prs": [],
-      "created": "2025-04-15",
-      "updated": "2026-05-16",
+      "created": "2025-02-12",
+      "updated": "2026-07-15",
       "labels": [
         "enhancement",
         "triage"
       ],
-      "url": "https://github.com/hydra-ecosystem/hydra/issues/3055"
+      "url": "https://github.com/hydra-ecosystem/hydra/issues/3026"
     }
   ],
   "updates": [
+    {
+      "ts": "2026-09-05T17:45:12Z",
+      "kind": "closed",
+      "issue": 3026,
+      "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3026",
+      "title": "[Feature Request] Allow for defaults list `override` to update the ordering of defaults?"
+    },
     {
       "ts": "2026-09-05T17:33:44Z",
       "kind": "closed",
@@ -3664,14 +3671,6 @@
       "issue": 2453,
       "issue_url": "https://github.com/facebookresearch/hydra/issues/2453",
       "title": "[Feature Request] ConfigStore to warn or raise on name/group collision",
-      "detail": "removed \"triage\""
-    },
-    {
-      "ts": "2026-07-29T07:07:15Z",
-      "kind": "label",
-      "issue": 2412,
-      "issue_url": "https://github.com/facebookresearch/hydra/issues/2412",
-      "title": "[Feature Request] allow to use hydra without an __init__.py",
       "detail": "removed \"triage\""
     }
   ]
