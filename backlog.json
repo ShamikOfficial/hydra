@@ -1,27 +1,27 @@
 {
   "generated_on": "2026-09-05",
-  "generated_at": "2026-09-05T19:55:51Z",
+  "generated_at": "2026-09-05T20:14:37Z",
   "repo": "hydra-ecosystem/hydra",
   "summary": {
-    "open_total": 78,
+    "open_total": 77,
     "by_category": [
       {
         "category": "Bug",
         "emoji": "🐛",
         "count": 8,
-        "percentage": 10.3
+        "percentage": 10.4
       },
       {
         "category": "Enhancement",
         "emoji": "✨",
-        "count": 58,
-        "percentage": 74.4
+        "count": 57,
+        "percentage": 74.0
       },
       {
         "category": "Documentation",
         "emoji": "📄",
         "count": 6,
-        "percentage": 7.7
+        "percentage": 7.8
       },
       {
         "category": "Question",
@@ -33,7 +33,7 @@
         "category": "Refactor",
         "emoji": "🔧",
         "count": 3,
-        "percentage": 3.8
+        "percentage": 3.9
       },
       {
         "category": "Build",
@@ -61,12 +61,12 @@
       {
         "status": "not started",
         "emoji": "⬜",
-        "count": 77
+        "count": 76
       },
       {
         "status": "done",
         "emoji": "✅",
-        "count": 48
+        "count": 49
       }
     ]
   },
@@ -735,22 +735,6 @@
         "enhancement"
       ],
       "url": "https://github.com/hydra-ecosystem/hydra/issues/2944"
-    },
-    {
-      "number": 2991,
-      "title": "[Feature Request] VS Code Hydra Config File Navigation",
-      "category": "Enhancement",
-      "category_emoji": "✨",
-      "status": "not started",
-      "status_emoji": "⬜",
-      "prs": [],
-      "created": "2024-11-20",
-      "updated": "2026-07-15",
-      "labels": [
-        "enhancement",
-        "triage"
-      ],
-      "url": "https://github.com/hydra-ecosystem/hydra/issues/2991"
     },
     {
       "number": 3066,
@@ -1700,6 +1684,22 @@
       "url": "https://github.com/hydra-ecosystem/hydra/issues/2981"
     },
     {
+      "number": 2993,
+      "title": "[Feature Request] Allow complete group override while Inheriting other Configs",
+      "category": "Enhancement",
+      "category_emoji": "✨",
+      "status": "done",
+      "status_emoji": "✅",
+      "prs": [],
+      "created": "2024-11-22",
+      "updated": "2026-07-15",
+      "labels": [
+        "enhancement",
+        "triage"
+      ],
+      "url": "https://github.com/hydra-ecosystem/hydra/issues/2993"
+    },
+    {
       "number": 3002,
       "title": "Implement parallel startup with startup intervals between multiple tasks in multirun mode",
       "category": "Enhancement",
@@ -2049,23 +2049,30 @@
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3436"
     },
     {
-      "number": 2993,
-      "title": "[Feature Request] Allow complete group override while Inheriting other Configs",
+      "number": 2991,
+      "title": "[Feature Request] VS Code Hydra Config File Navigation",
       "category": "Enhancement",
       "category_emoji": "✨",
       "status": "done",
       "status_emoji": "✅",
       "prs": [],
-      "created": "2024-11-22",
+      "created": "2024-11-20",
       "updated": "2026-07-15",
       "labels": [
         "enhancement",
         "triage"
       ],
-      "url": "https://github.com/hydra-ecosystem/hydra/issues/2993"
+      "url": "https://github.com/hydra-ecosystem/hydra/issues/2991"
     }
   ],
   "updates": [
+    {
+      "ts": "2026-09-05T20:14:37Z",
+      "kind": "closed",
+      "issue": 2991,
+      "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/2991",
+      "title": "[Feature Request] VS Code Hydra Config File Navigation"
+    },
     {
       "ts": "2026-09-05T19:55:51Z",
       "kind": "closed",
@@ -3658,13 +3665,6 @@
       "issue": 3328,
       "issue_url": "https://github.com/facebookresearch/hydra/issues/3328",
       "title": "[Feature Request] First-class resume support for Hydra sweeps"
-    },
-    {
-      "ts": "2026-07-30T20:15:03Z",
-      "kind": "closed",
-      "issue": 2459,
-      "issue_url": "https://github.com/facebookresearch/hydra/issues/2459",
-      "title": "[Feature Request] Add `overrides` parameter to `@hydra.main()`"
     }
   ]
 }

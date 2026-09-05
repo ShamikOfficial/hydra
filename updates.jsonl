@@ -799,3 +799,4 @@
 {"ts": "2026-09-05T19:42:19Z", "kind": "closed", "issue": 3011, "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3011", "title": "New release of hydra-colorlog?"}
 {"ts": "2026-09-05T19:50:29Z", "kind": "closed", "issue": 3002, "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3002", "title": "Implement parallel startup with startup intervals between multiple tasks in multirun mode"}
 {"ts": "2026-09-05T19:55:51Z", "kind": "closed", "issue": 2993, "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/2993", "title": "[Feature Request] Allow complete group override while Inheriting other Configs"}
+{"ts": "2026-09-05T20:14:37Z", "kind": "closed", "issue": 2991, "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/2991", "title": "[Feature Request] VS Code Hydra Config File Navigation"}
