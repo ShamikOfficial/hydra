@@ -1,39 +1,39 @@
 {
   "generated_on": "2026-09-05",
-  "generated_at": "2026-09-05T20:59:34Z",
+  "generated_at": "2026-09-05T21:05:44Z",
   "repo": "hydra-ecosystem/hydra",
   "summary": {
-    "open_total": 75,
+    "open_total": 74,
     "by_category": [
       {
         "category": "Bug",
         "emoji": "🐛",
         "count": 7,
-        "percentage": 9.3
+        "percentage": 9.5
       },
       {
         "category": "Enhancement",
         "emoji": "✨",
-        "count": 56,
-        "percentage": 74.7
+        "count": 55,
+        "percentage": 74.3
       },
       {
         "category": "Documentation",
         "emoji": "📄",
         "count": 6,
-        "percentage": 8.0
+        "percentage": 8.1
       },
       {
         "category": "Question",
         "emoji": "❓",
         "count": 1,
-        "percentage": 1.3
+        "percentage": 1.4
       },
       {
         "category": "Refactor",
         "emoji": "🔧",
         "count": 3,
-        "percentage": 4.0
+        "percentage": 4.1
       },
       {
         "category": "Build",
@@ -61,12 +61,12 @@
       {
         "status": "not started",
         "emoji": "⬜",
-        "count": 74
+        "count": 73
       },
       {
         "status": "done",
         "emoji": "✅",
-        "count": 51
+        "count": 52
       }
     ]
   },
@@ -349,22 +349,6 @@
         "priority_low"
       ],
       "url": "https://github.com/hydra-ecosystem/hydra/issues/1393"
-    },
-    {
-      "number": 1512,
-      "title": "Support multirun partial failure in Ax Sweeper",
-      "category": "Enhancement",
-      "category_emoji": "✨",
-      "status": "not started",
-      "status_emoji": "⬜",
-      "prs": [],
-      "created": "2021-03-29",
-      "updated": "2026-07-22",
-      "labels": [
-        "ax",
-        "sweep"
-      ],
-      "url": "https://github.com/hydra-ecosystem/hydra/issues/1512"
     },
     {
       "number": 1547,
@@ -793,7 +777,7 @@
       "status_emoji": "⬜",
       "prs": [],
       "created": "2026-05-15",
-      "updated": "2026-09-04",
+      "updated": "2026-09-05",
       "labels": [
         "help wanted",
         "plugin",
@@ -1259,6 +1243,21 @@
         "enhancement"
       ],
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3438"
+    },
+    {
+      "number": 1602,
+      "title": "[Bug] sporadic transient errors from Ray plugin CI",
+      "category": "Bug",
+      "category_emoji": "🐛",
+      "status": "done",
+      "status_emoji": "✅",
+      "prs": [],
+      "created": "2021-05-03",
+      "updated": "2021-06-21",
+      "labels": [
+        "bug"
+      ],
+      "url": "https://github.com/hydra-ecosystem/hydra/issues/1602"
     },
     {
       "number": 2757,
@@ -2050,22 +2049,30 @@
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3436"
     },
     {
-      "number": 1602,
-      "title": "[Bug] sporadic transient errors from Ray plugin CI",
-      "category": "Bug",
-      "category_emoji": "🐛",
+      "number": 1512,
+      "title": "Support multirun partial failure in Ax Sweeper",
+      "category": "Enhancement",
+      "category_emoji": "✨",
       "status": "done",
       "status_emoji": "✅",
       "prs": [],
-      "created": "2021-05-03",
-      "updated": "2021-06-21",
+      "created": "2021-03-29",
+      "updated": "2026-07-22",
       "labels": [
-        "bug"
+        "ax",
+        "sweep"
       ],
-      "url": "https://github.com/hydra-ecosystem/hydra/issues/1602"
+      "url": "https://github.com/hydra-ecosystem/hydra/issues/1512"
     }
   ],
   "updates": [
+    {
+      "ts": "2026-09-05T21:05:44Z",
+      "kind": "closed",
+      "issue": 1512,
+      "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/1512",
+      "title": "Support multirun partial failure in Ax Sweeper"
+    },
     {
       "ts": "2026-09-05T20:59:34Z",
       "kind": "closed",
@@ -3656,14 +3663,6 @@
       "issue": 2471,
       "issue_url": "https://github.com/facebookresearch/hydra/issues/2471",
       "title": "[Feature Request] Appending to a structured dict from a config file"
-    },
-    {
-      "ts": "2026-07-31T06:16:26Z",
-      "kind": "label",
-      "issue": 2793,
-      "issue_url": "https://github.com/facebookresearch/hydra/issues/2793",
-      "title": "[Optuna Sweeper] Support persisted studies for analysis and resume",
-      "detail": "added \"blocked\", \"optuna\", \"plugin\", \"sweep\""
     }
   ]
 }
