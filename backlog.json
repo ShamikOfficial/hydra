@@ -1,27 +1,27 @@
 {
   "generated_on": "2026-09-05",
-  "generated_at": "2026-09-05T20:55:52Z",
+  "generated_at": "2026-09-05T20:59:34Z",
   "repo": "hydra-ecosystem/hydra",
   "summary": {
-    "open_total": 76,
+    "open_total": 75,
     "by_category": [
       {
         "category": "Bug",
         "emoji": "🐛",
-        "count": 8,
-        "percentage": 10.5
+        "count": 7,
+        "percentage": 9.3
       },
       {
         "category": "Enhancement",
         "emoji": "✨",
         "count": 56,
-        "percentage": 73.7
+        "percentage": 74.7
       },
       {
         "category": "Documentation",
         "emoji": "📄",
         "count": 6,
-        "percentage": 7.9
+        "percentage": 8.0
       },
       {
         "category": "Question",
@@ -33,13 +33,13 @@
         "category": "Refactor",
         "emoji": "🔧",
         "count": 3,
-        "percentage": 3.9
+        "percentage": 4.0
       },
       {
         "category": "Build",
         "emoji": "🏗️",
         "count": 2,
-        "percentage": 2.6
+        "percentage": 2.7
       }
     ],
     "by_status": [
@@ -61,12 +61,12 @@
       {
         "status": "not started",
         "emoji": "⬜",
-        "count": 75
+        "count": 74
       },
       {
         "status": "done",
         "emoji": "✅",
-        "count": 50
+        "count": 51
       }
     ]
   },
@@ -383,21 +383,6 @@
         "internal"
       ],
       "url": "https://github.com/hydra-ecosystem/hydra/issues/1547"
-    },
-    {
-      "number": 1602,
-      "title": "[Bug] sporadic transient errors from Ray plugin CI",
-      "category": "Bug",
-      "category_emoji": "🐛",
-      "status": "not started",
-      "status_emoji": "⬜",
-      "prs": [],
-      "created": "2021-05-03",
-      "updated": "2021-06-21",
-      "labels": [
-        "bug"
-      ],
-      "url": "https://github.com/hydra-ecosystem/hydra/issues/1602"
     },
     {
       "number": 1622,
@@ -1832,6 +1817,19 @@
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3369"
     },
     {
+      "number": 3371,
+      "title": "Set up CLA, GA4, and privacy policy",
+      "category": "Enhancement",
+      "category_emoji": "✨",
+      "status": "done",
+      "status_emoji": "✅",
+      "prs": [],
+      "created": "2026-08-11",
+      "updated": "2026-08-11",
+      "labels": [],
+      "url": "https://github.com/hydra-ecosystem/hydra/issues/3371"
+    },
+    {
       "number": 3385,
       "title": "Backlog Atlas canary: trusted prompt update",
       "category": "Enhancement",
@@ -2052,20 +2050,29 @@
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3436"
     },
     {
-      "number": 3371,
-      "title": "Set up CLA, GA4, and privacy policy",
-      "category": "Enhancement",
-      "category_emoji": "✨",
+      "number": 1602,
+      "title": "[Bug] sporadic transient errors from Ray plugin CI",
+      "category": "Bug",
+      "category_emoji": "🐛",
       "status": "done",
       "status_emoji": "✅",
       "prs": [],
-      "created": "2026-08-11",
-      "updated": "2026-08-11",
-      "labels": [],
-      "url": "https://github.com/hydra-ecosystem/hydra/issues/3371"
+      "created": "2021-05-03",
+      "updated": "2021-06-21",
+      "labels": [
+        "bug"
+      ],
+      "url": "https://github.com/hydra-ecosystem/hydra/issues/1602"
     }
   ],
   "updates": [
+    {
+      "ts": "2026-09-05T20:59:34Z",
+      "kind": "closed",
+      "issue": 1602,
+      "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/1602",
+      "title": "[Bug] sporadic transient errors from Ray plugin CI"
+    },
     {
       "ts": "2026-09-05T20:55:52Z",
       "kind": "closed",
@@ -3657,14 +3664,6 @@
       "issue_url": "https://github.com/facebookresearch/hydra/issues/2793",
       "title": "[Optuna Sweeper] Support persisted studies for analysis and resume",
       "detail": "added \"blocked\", \"optuna\", \"plugin\", \"sweep\""
-    },
-    {
-      "ts": "2026-07-31T06:12:31Z",
-      "kind": "label",
-      "issue": 3328,
-      "issue_url": "https://github.com/facebookresearch/hydra/issues/3328",
-      "title": "[Feature Request] First-class resume support for Hydra sweeps",
-      "detail": "added \"enhancement\", \"needs decision\", \"sweep\""
     }
   ]
 }
