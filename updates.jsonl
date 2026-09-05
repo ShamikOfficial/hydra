@@ -797,3 +797,4 @@
 {"ts": "2026-09-05T17:59:14Z", "kind": "closed", "issue": 3015, "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3015", "title": "[Feature Request] Support Instantiation of User Plugins Without Special Module"}
 {"ts": "2026-09-05T18:15:00Z", "kind": "closed", "issue": 3012, "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3012", "title": "[Feature Request] It might be useful to have a utility function for integration testing pipelines built with Hydra that expose command line interfaces through config files."}
 {"ts": "2026-09-05T19:42:19Z", "kind": "closed", "issue": 3011, "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3011", "title": "New release of hydra-colorlog?"}
+{"ts": "2026-09-05T19:50:29Z", "kind": "closed", "issue": 3002, "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3002", "title": "Implement parallel startup with startup intervals between multiple tasks in multirun mode"}
