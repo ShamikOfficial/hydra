@@ -35,6 +35,7 @@
     "3055": "2026-09-05",
     "3064": "2026-09-05",
     "3369": "2026-09-04",
+    "3371": "2026-09-05",
     "3385": "2026-08-12",
     "3386": "2026-08-12",
     "3395": "2026-08-15",
@@ -50,7 +51,7 @@
     "3426": "2026-09-02",
     "3436": "2026-09-05"
   },
-  "generated_at": "2026-09-05T20:14:37Z",
+  "generated_at": "2026-09-05T20:55:52Z",
   "issues": {
     "1085": {
       "category": "Enhancement",
@@ -748,16 +749,6 @@
       "title": "Make Compose API initialization contexts nestable and self-contained",
       "updated_at": "2026-09-03T21:08:51Z"
     },
-    "3371": {
-      "category": "Enhancement",
-      "created_at": "2026-08-11T21:50:09Z",
-      "labels": [],
-      "pr_numbers": [],
-      "state": "OPEN",
-      "status": "not started",
-      "title": "Set up CLA, GA4, and privacy policy",
-      "updated_at": "2026-08-11T21:50:10Z"
-    },
     "3375": {
       "category": "Enhancement",
       "created_at": "2026-08-11T23:59:22Z",
@@ -778,7 +769,7 @@
       "state": "OPEN",
       "status": "not started",
       "title": "Remove remaining Meta-era repository branding and processes",
-      "updated_at": "2026-08-13T13:49:31Z"
+      "updated_at": "2026-09-05T20:42:03Z"
     },
     "3400": {
       "category": "Bug",
@@ -1484,6 +1475,16 @@
       "status": "done",
       "title": "Remove redundant setup-xcode step from macOS CI",
       "updated_at": "2026-09-04T12:40:41Z"
+    },
+    "3371": {
+      "category": "Enhancement",
+      "created_at": "2026-08-11T21:50:09Z",
+      "labels": [],
+      "pr_numbers": [],
+      "state": "CLOSED",
+      "status": "done",
+      "title": "Set up CLA, GA4, and privacy policy",
+      "updated_at": "2026-08-11T21:50:10Z"
     },
     "3385": {
       "category": "Enhancement",

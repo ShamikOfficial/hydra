@@ -1,27 +1,27 @@
 {
   "generated_on": "2026-09-05",
-  "generated_at": "2026-09-05T20:14:37Z",
+  "generated_at": "2026-09-05T20:55:52Z",
   "repo": "hydra-ecosystem/hydra",
   "summary": {
-    "open_total": 77,
+    "open_total": 76,
     "by_category": [
       {
         "category": "Bug",
         "emoji": "🐛",
         "count": 8,
-        "percentage": 10.4
+        "percentage": 10.5
       },
       {
         "category": "Enhancement",
         "emoji": "✨",
-        "count": 57,
-        "percentage": 74.0
+        "count": 56,
+        "percentage": 73.7
       },
       {
         "category": "Documentation",
         "emoji": "📄",
         "count": 6,
-        "percentage": 7.8
+        "percentage": 7.9
       },
       {
         "category": "Question",
@@ -61,12 +61,12 @@
       {
         "status": "not started",
         "emoji": "⬜",
-        "count": 76
+        "count": 75
       },
       {
         "status": "done",
         "emoji": "✅",
-        "count": 49
+        "count": 50
       }
     ]
   },
@@ -1142,19 +1142,6 @@
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3364"
     },
     {
-      "number": 3371,
-      "title": "Set up CLA, GA4, and privacy policy",
-      "category": "Enhancement",
-      "category_emoji": "✨",
-      "status": "not started",
-      "status_emoji": "⬜",
-      "prs": [],
-      "created": "2026-08-11",
-      "updated": "2026-08-11",
-      "labels": [],
-      "url": "https://github.com/hydra-ecosystem/hydra/issues/3371"
-    },
-    {
       "number": 3389,
       "title": "Remove remaining Meta-era repository branding and processes",
       "category": "Refactor",
@@ -1163,7 +1150,7 @@
       "status_emoji": "⬜",
       "prs": [],
       "created": "2026-08-13",
-      "updated": "2026-08-13",
+      "updated": "2026-09-05",
       "labels": [],
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3389"
     },
@@ -1684,6 +1671,22 @@
       "url": "https://github.com/hydra-ecosystem/hydra/issues/2981"
     },
     {
+      "number": 2991,
+      "title": "[Feature Request] VS Code Hydra Config File Navigation",
+      "category": "Enhancement",
+      "category_emoji": "✨",
+      "status": "done",
+      "status_emoji": "✅",
+      "prs": [],
+      "created": "2024-11-20",
+      "updated": "2026-07-15",
+      "labels": [
+        "enhancement",
+        "triage"
+      ],
+      "url": "https://github.com/hydra-ecosystem/hydra/issues/2991"
+    },
+    {
       "number": 2993,
       "title": "[Feature Request] Allow complete group override while Inheriting other Configs",
       "category": "Enhancement",
@@ -2049,23 +2052,27 @@
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3436"
     },
     {
-      "number": 2991,
-      "title": "[Feature Request] VS Code Hydra Config File Navigation",
+      "number": 3371,
+      "title": "Set up CLA, GA4, and privacy policy",
       "category": "Enhancement",
       "category_emoji": "✨",
       "status": "done",
       "status_emoji": "✅",
       "prs": [],
-      "created": "2024-11-20",
-      "updated": "2026-07-15",
-      "labels": [
-        "enhancement",
-        "triage"
-      ],
-      "url": "https://github.com/hydra-ecosystem/hydra/issues/2991"
+      "created": "2026-08-11",
+      "updated": "2026-08-11",
+      "labels": [],
+      "url": "https://github.com/hydra-ecosystem/hydra/issues/3371"
     }
   ],
   "updates": [
+    {
+      "ts": "2026-09-05T20:55:52Z",
+      "kind": "closed",
+      "issue": 3371,
+      "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3371",
+      "title": "Set up CLA, GA4, and privacy policy"
+    },
     {
       "ts": "2026-09-05T20:14:37Z",
       "kind": "closed",
@@ -3658,13 +3665,6 @@
       "issue_url": "https://github.com/facebookresearch/hydra/issues/3328",
       "title": "[Feature Request] First-class resume support for Hydra sweeps",
       "detail": "added \"enhancement\", \"needs decision\", \"sweep\""
-    },
-    {
-      "ts": "2026-07-31T06:06:42Z",
-      "kind": "new",
-      "issue": 3328,
-      "issue_url": "https://github.com/facebookresearch/hydra/issues/3328",
-      "title": "[Feature Request] First-class resume support for Hydra sweeps"
     }
   ]
 }
