@@ -1,27 +1,27 @@
 {
   "generated_on": "2026-09-05",
-  "generated_at": "2026-09-05T17:59:14Z",
+  "generated_at": "2026-09-05T18:15:00Z",
   "repo": "hydra-ecosystem/hydra",
   "summary": {
-    "open_total": 82,
+    "open_total": 81,
     "by_category": [
       {
         "category": "Bug",
         "emoji": "🐛",
         "count": 8,
-        "percentage": 9.8
+        "percentage": 9.9
       },
       {
         "category": "Enhancement",
         "emoji": "✨",
-        "count": 61,
-        "percentage": 74.4
+        "count": 60,
+        "percentage": 74.1
       },
       {
         "category": "Documentation",
         "emoji": "📄",
         "count": 6,
-        "percentage": 7.3
+        "percentage": 7.4
       },
       {
         "category": "Question",
@@ -61,12 +61,12 @@
       {
         "status": "not started",
         "emoji": "⬜",
-        "count": 81
+        "count": 80
       },
       {
         "status": "done",
         "emoji": "✅",
-        "count": 44
+        "count": 45
       }
     ]
   },
@@ -798,22 +798,6 @@
         "triage"
       ],
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3011"
-    },
-    {
-      "number": 3012,
-      "title": "[Feature Request] It might be useful to have a utility function for integration testing pipelines built with Hydra that expose command line interfaces through config files.",
-      "category": "Enhancement",
-      "category_emoji": "✨",
-      "status": "not started",
-      "status_emoji": "⬜",
-      "prs": [],
-      "created": "2025-01-21",
-      "updated": "2026-07-15",
-      "labels": [
-        "enhancement",
-        "triage"
-      ],
-      "url": "https://github.com/hydra-ecosystem/hydra/issues/3012"
     },
     {
       "number": 3066,
@@ -1763,6 +1747,22 @@
       "url": "https://github.com/hydra-ecosystem/hydra/issues/2981"
     },
     {
+      "number": 3015,
+      "title": "[Feature Request] Support Instantiation of User Plugins Without Special Module",
+      "category": "Enhancement",
+      "category_emoji": "✨",
+      "status": "done",
+      "status_emoji": "✅",
+      "prs": [],
+      "created": "2025-01-29",
+      "updated": "2026-07-15",
+      "labels": [
+        "enhancement",
+        "triage"
+      ],
+      "url": "https://github.com/hydra-ecosystem/hydra/issues/3015"
+    },
+    {
       "number": 3026,
       "title": "[Feature Request] Allow for defaults list `override` to update the ordering of defaults?",
       "category": "Enhancement",
@@ -2049,23 +2049,30 @@
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3436"
     },
     {
-      "number": 3015,
-      "title": "[Feature Request] Support Instantiation of User Plugins Without Special Module",
+      "number": 3012,
+      "title": "[Feature Request] It might be useful to have a utility function for integration testing pipelines built with Hydra that expose command line interfaces through config files.",
       "category": "Enhancement",
       "category_emoji": "✨",
       "status": "done",
       "status_emoji": "✅",
       "prs": [],
-      "created": "2025-01-29",
+      "created": "2025-01-21",
       "updated": "2026-07-15",
       "labels": [
         "enhancement",
         "triage"
       ],
-      "url": "https://github.com/hydra-ecosystem/hydra/issues/3015"
+      "url": "https://github.com/hydra-ecosystem/hydra/issues/3012"
     }
   ],
   "updates": [
+    {
+      "ts": "2026-09-05T18:15:00Z",
+      "kind": "closed",
+      "issue": 3012,
+      "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3012",
+      "title": "[Feature Request] It might be useful to have a utility function for integration testing pipelines built with Hydra that expose command line interfaces through config files."
+    },
     {
       "ts": "2026-09-05T17:59:14Z",
       "kind": "closed",
@@ -3664,13 +3671,6 @@
         "number": 3327,
         "url": "https://github.com/facebookresearch/hydra/pull/3327"
       }
-    },
-    {
-      "ts": "2026-07-29T09:10:14Z",
-      "kind": "closed",
-      "issue": 2455,
-      "issue_url": "https://github.com/facebookresearch/hydra/issues/2455",
-      "title": "[Feature Request] Support loading YAML from user-specified URI"
     }
   ]
 }
