@@ -1,27 +1,27 @@
 {
   "generated_on": "2026-09-05",
-  "generated_at": "2026-09-05T15:43:24Z",
+  "generated_at": "2026-09-05T17:19:06Z",
   "repo": "hydra-ecosystem/hydra",
   "summary": {
-    "open_total": 85,
+    "open_total": 86,
     "by_category": [
       {
         "category": "Bug",
         "emoji": "🐛",
         "count": 8,
-        "percentage": 9.4
+        "percentage": 9.3
       },
       {
         "category": "Enhancement",
         "emoji": "✨",
-        "count": 64,
-        "percentage": 75.3
+        "count": 65,
+        "percentage": 75.6
       },
       {
         "category": "Documentation",
         "emoji": "📄",
         "count": 6,
-        "percentage": 7.1
+        "percentage": 7.0
       },
       {
         "category": "Question",
@@ -61,7 +61,7 @@
       {
         "status": "not started",
         "emoji": "⬜",
-        "count": 84
+        "count": 85
       },
       {
         "status": "done",
@@ -1418,6 +1418,21 @@
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3427"
     },
     {
+      "number": 3438,
+      "title": "Improve type safety of Hydra logging configurations",
+      "category": "Enhancement",
+      "category_emoji": "✨",
+      "status": "not started",
+      "status_emoji": "⬜",
+      "prs": [],
+      "created": "2026-09-05",
+      "updated": "2026-09-05",
+      "labels": [
+        "enhancement"
+      ],
+      "url": "https://github.com/hydra-ecosystem/hydra/issues/3438"
+    },
+    {
       "number": 2757,
       "title": "[Bug] Submitit Local Launcher does not share jobs across GPUs",
       "category": "Bug",
@@ -2052,6 +2067,13 @@
     }
   ],
   "updates": [
+    {
+      "ts": "2026-09-05T17:19:06Z",
+      "kind": "new",
+      "issue": 3438,
+      "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3438",
+      "title": "Improve type safety of Hydra logging configurations"
+    },
     {
       "ts": "2026-09-05T15:43:24Z",
       "kind": "label",
@@ -3651,13 +3673,6 @@
       "issue": 3326,
       "issue_url": "https://github.com/facebookresearch/hydra/issues/3326",
       "title": "Add a Reploy launcher for immutable, reproducible job execution"
-    },
-    {
-      "ts": "2026-07-29T03:23:44Z",
-      "kind": "closed",
-      "issue": 2323,
-      "issue_url": "https://github.com/facebookresearch/hydra/issues/2323",
-      "title": "specify maximum tasks in submitit_local"
     }
   ]
 }
