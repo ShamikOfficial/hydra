@@ -1,27 +1,27 @@
 {
   "generated_on": "2026-09-05",
-  "generated_at": "2026-09-05T17:45:12Z",
+  "generated_at": "2026-09-05T17:59:14Z",
   "repo": "hydra-ecosystem/hydra",
   "summary": {
-    "open_total": 83,
+    "open_total": 82,
     "by_category": [
       {
         "category": "Bug",
         "emoji": "🐛",
         "count": 8,
-        "percentage": 9.6
+        "percentage": 9.8
       },
       {
         "category": "Enhancement",
         "emoji": "✨",
-        "count": 62,
-        "percentage": 74.7
+        "count": 61,
+        "percentage": 74.4
       },
       {
         "category": "Documentation",
         "emoji": "📄",
         "count": 6,
-        "percentage": 7.2
+        "percentage": 7.3
       },
       {
         "category": "Question",
@@ -33,13 +33,13 @@
         "category": "Refactor",
         "emoji": "🔧",
         "count": 3,
-        "percentage": 3.6
+        "percentage": 3.7
       },
       {
         "category": "Build",
         "emoji": "🏗️",
         "count": 3,
-        "percentage": 3.6
+        "percentage": 3.7
       }
     ],
     "by_status": [
@@ -61,12 +61,12 @@
       {
         "status": "not started",
         "emoji": "⬜",
-        "count": 82
+        "count": 81
       },
       {
         "status": "done",
         "emoji": "✅",
-        "count": 43
+        "count": 44
       }
     ]
   },
@@ -816,22 +816,6 @@
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3012"
     },
     {
-      "number": 3015,
-      "title": "[Feature Request] Support Instantiation of User Plugins Without Special Module",
-      "category": "Enhancement",
-      "category_emoji": "✨",
-      "status": "not started",
-      "status_emoji": "⬜",
-      "prs": [],
-      "created": "2025-01-29",
-      "updated": "2026-07-15",
-      "labels": [
-        "enhancement",
-        "triage"
-      ],
-      "url": "https://github.com/hydra-ecosystem/hydra/issues/3015"
-    },
-    {
       "number": 3066,
       "title": "[Feature Request] Logging config to include `loggers` as well as `root` (suggested solution)",
       "category": "Enhancement",
@@ -1090,7 +1074,7 @@
       "status_emoji": "⬜",
       "prs": [],
       "created": "2026-06-30",
-      "updated": "2026-06-30",
+      "updated": "2026-09-05",
       "labels": [],
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3252"
     },
@@ -1779,6 +1763,22 @@
       "url": "https://github.com/hydra-ecosystem/hydra/issues/2981"
     },
     {
+      "number": 3026,
+      "title": "[Feature Request] Allow for defaults list `override` to update the ordering of defaults?",
+      "category": "Enhancement",
+      "category_emoji": "✨",
+      "status": "done",
+      "status_emoji": "✅",
+      "prs": [],
+      "created": "2025-02-12",
+      "updated": "2026-07-15",
+      "labels": [
+        "enhancement",
+        "triage"
+      ],
+      "url": "https://github.com/hydra-ecosystem/hydra/issues/3026"
+    },
+    {
       "number": 3055,
       "title": "[Feature Request] -- is there a way to sweep in nested folder inside config group?",
       "category": "Enhancement",
@@ -2049,23 +2049,30 @@
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3436"
     },
     {
-      "number": 3026,
-      "title": "[Feature Request] Allow for defaults list `override` to update the ordering of defaults?",
+      "number": 3015,
+      "title": "[Feature Request] Support Instantiation of User Plugins Without Special Module",
       "category": "Enhancement",
       "category_emoji": "✨",
       "status": "done",
       "status_emoji": "✅",
       "prs": [],
-      "created": "2025-02-12",
+      "created": "2025-01-29",
       "updated": "2026-07-15",
       "labels": [
         "enhancement",
         "triage"
       ],
-      "url": "https://github.com/hydra-ecosystem/hydra/issues/3026"
+      "url": "https://github.com/hydra-ecosystem/hydra/issues/3015"
     }
   ],
   "updates": [
+    {
+      "ts": "2026-09-05T17:59:14Z",
+      "kind": "closed",
+      "issue": 3015,
+      "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3015",
+      "title": "[Feature Request] Support Instantiation of User Plugins Without Special Module"
+    },
     {
       "ts": "2026-09-05T17:45:12Z",
       "kind": "closed",
@@ -3664,14 +3671,6 @@
       "issue": 2455,
       "issue_url": "https://github.com/facebookresearch/hydra/issues/2455",
       "title": "[Feature Request] Support loading YAML from user-specified URI"
-    },
-    {
-      "ts": "2026-07-29T07:41:17Z",
-      "kind": "label",
-      "issue": 2453,
-      "issue_url": "https://github.com/facebookresearch/hydra/issues/2453",
-      "title": "[Feature Request] ConfigStore to warn or raise on name/group collision",
-      "detail": "removed \"triage\""
     }
   ]
 }
