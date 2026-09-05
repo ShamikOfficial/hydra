@@ -1,27 +1,27 @@
 {
   "generated_on": "2026-09-05",
-  "generated_at": "2026-09-05T17:23:27Z",
+  "generated_at": "2026-09-05T17:30:28Z",
   "repo": "hydra-ecosystem/hydra",
   "summary": {
-    "open_total": 86,
+    "open_total": 85,
     "by_category": [
       {
         "category": "Bug",
         "emoji": "🐛",
         "count": 8,
-        "percentage": 9.3
+        "percentage": 9.4
       },
       {
         "category": "Enhancement",
         "emoji": "✨",
-        "count": 65,
-        "percentage": 75.6
+        "count": 64,
+        "percentage": 75.3
       },
       {
         "category": "Documentation",
         "emoji": "📄",
         "count": 6,
-        "percentage": 7.0
+        "percentage": 7.1
       },
       {
         "category": "Question",
@@ -61,12 +61,12 @@
       {
         "status": "not started",
         "emoji": "⬜",
-        "count": 85
+        "count": 84
       },
       {
         "status": "done",
         "emoji": "✅",
-        "count": 40
+        "count": 41
       }
     ]
   },
@@ -862,22 +862,6 @@
         "triage"
       ],
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3055"
-    },
-    {
-      "number": 3064,
-      "title": "[Feature Request] No sweepers are compatible with python >3.10 (NeverGrad, Ax, Optuna)",
-      "category": "Enhancement",
-      "category_emoji": "✨",
-      "status": "not started",
-      "status_emoji": "⬜",
-      "prs": [],
-      "created": "2025-05-21",
-      "updated": "2026-05-16",
-      "labels": [
-        "enhancement",
-        "triage"
-      ],
-      "url": "https://github.com/hydra-ecosystem/hydra/issues/3064"
     },
     {
       "number": 3066,
@@ -2063,9 +2047,32 @@
         "difficult"
       ],
       "url": "https://github.com/hydra-ecosystem/hydra/issues/3436"
+    },
+    {
+      "number": 3064,
+      "title": "[Feature Request] No sweepers are compatible with python >3.10 (NeverGrad, Ax, Optuna)",
+      "category": "Enhancement",
+      "category_emoji": "✨",
+      "status": "done",
+      "status_emoji": "✅",
+      "prs": [],
+      "created": "2025-05-21",
+      "updated": "2026-05-16",
+      "labels": [
+        "enhancement",
+        "triage"
+      ],
+      "url": "https://github.com/hydra-ecosystem/hydra/issues/3064"
     }
   ],
   "updates": [
+    {
+      "ts": "2026-09-05T17:30:28Z",
+      "kind": "closed",
+      "issue": 3064,
+      "issue_url": "https://github.com/hydra-ecosystem/hydra/issues/3064",
+      "title": "[Feature Request] No sweepers are compatible with python >3.10 (NeverGrad, Ax, Optuna)"
+    },
     {
       "ts": "2026-09-05T17:23:27Z",
       "kind": "label",
@@ -3666,13 +3673,6 @@
       "issue": 2387,
       "issue_url": "https://github.com/facebookresearch/hydra/issues/2387",
       "title": "Docs unclear on how to use multiple entries in defaults list"
-    },
-    {
-      "ts": "2026-07-29T05:04:50Z",
-      "kind": "closed",
-      "issue": 2351,
-      "issue_url": "https://github.com/facebookresearch/hydra/issues/2351",
-      "title": "[Feature Request] Possibility to save full start command in separate file"
     }
   ]
 }
