@@ -2014,18 +2014,21 @@ def test_controller_resolution_and_restore(
     def task(cfg: DictConfig) -> None:
         seen["job_id"] = HydraConfig.get().job.id
 
-    with execution_whitelist("tests.test_hydra.*"), hydra_sweep_runner(
-        calling_file="tests/test_apps/simple_app/my_app.py",
-        calling_module=None,
-        config_path=None,
-        config_name=None,
-        task_function=task,
-        overrides=[
-            "+x=1",
-            "+hydra.callbacks.probe._target_=tests.test_hydra.ControllerProbe",
-            "+hydra.callbacks.probe.controller_cwd=${hydra:runtime.cwd}",
-        ],
-        temp_dir=tmpdir,
+    with (
+        execution_whitelist("tests.test_hydra.*"),
+        hydra_sweep_runner(
+            calling_file="tests/test_apps/simple_app/my_app.py",
+            calling_module=None,
+            config_path=None,
+            config_name=None,
+            task_function=task,
+            overrides=[
+                "+x=1",
+                "+hydra.callbacks.probe._target_=tests.test_hydra.ControllerProbe",
+                "+hydra.callbacks.probe.controller_cwd=${hydra:runtime.cwd}",
+            ],
+            temp_dir=tmpdir,
+        ),
     ):
         pass
 
@@ -2043,17 +2046,20 @@ def test_multirun_restores_hydra_config_when_sweep_raises(
     assert not HydraConfig.initialized()
 
     with raises(InstantiationException, match="boom"):
-        with execution_whitelist("tests.test_hydra.*"), hydra_sweep_runner(
-            calling_file="tests/test_apps/simple_app/my_app.py",
-            calling_module=None,
-            config_path=None,
-            config_name=None,
-            task_function=None,
-            overrides=[
-                "+x=1",
-                "+hydra.callbacks.boom._target_=tests.test_hydra.RaisingCallback",
-            ],
-            temp_dir=tmpdir,
+        with (
+            execution_whitelist("tests.test_hydra.*"),
+            hydra_sweep_runner(
+                calling_file="tests/test_apps/simple_app/my_app.py",
+                calling_module=None,
+                config_path=None,
+                config_name=None,
+                task_function=None,
+                overrides=[
+                    "+x=1",
+                    "+hydra.callbacks.boom._target_=tests.test_hydra.RaisingCallback",
+                ],
+                temp_dir=tmpdir,
+            ),
         ):
             pass
 
