@@ -1982,3 +1982,31 @@ def test_hydra_runtime_choice_1882(tmpdir: Path) -> None:
         from_name="Expected output",
         to_name="Actual output",
     )
+
+
+def test_get_mode_does_not_compose(tmpdir: Path) -> None:
+    """Mode discovery must not run a full compose probe (#3440)."""
+    from hydra import initialize_config_dir
+    from hydra.core.global_hydra import GlobalHydra
+    from hydra.types import RunMode
+
+    conf_dir = Path(tmpdir) / "conf"
+    conf_dir.mkdir()
+    (conf_dir / "config.yaml").write_text(
+        "hydra:\n  mode: MULTIRUN\nx: 1\n", encoding="utf-8"
+    )
+
+    with initialize_config_dir(config_dir=str(conf_dir), job_name="test_get_mode"):
+        hydra = GlobalHydra.instance().hydra
+        assert hydra is not None
+
+        def boom(*_args: Any, **_kwargs: Any) -> Any:
+            raise AssertionError("compose_config should not run during get_mode")
+
+        hydra.compose_config = boom  # type: ignore[method-assign]
+        assert hydra.get_mode(config_name="config", overrides=[]) == RunMode.MULTIRUN
+        assert (
+            hydra.get_mode(config_name="config", overrides=["hydra.mode=RUN"])
+            == RunMode.RUN
+        )
+        assert hydra.get_mode(config_name="config", overrides=["x=2"]) == RunMode.MULTIRUN

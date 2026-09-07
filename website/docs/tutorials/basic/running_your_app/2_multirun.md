@@ -10,9 +10,18 @@ E.g. running a performance test on each of the databases with each of the schema
 You can multirun a Hydra application via either commandline or configuration:
 
 ### Configure `hydra.mode` (new in Hydra 1.2)
-You can configure `hydra.mode` in any supported way. The legal values are `RUN` and `MULTIRUN`.
+You can set `hydra.mode` from the command line or in the primary config file.
+The legal values are `RUN` and `MULTIRUN`.
 The following shows how to override from the command-line and sweep over all combinations of the dbs and schemas.
-Setting `hydra.mode=MULTIRUN` in your input config would make your application multi-run by default.
+Setting `hydra.mode=MULTIRUN` in your primary config makes your application multi-run by default.
+
+:::note
+`hydra.mode` is read before full config composition. Values that only appear
+through a defaults-list / config-group entry, or that need other composed nodes
+to interpolate, are not discovered for run/multirun dispatch. Prefer a primary
+config literal (or a self-contained resolver such as `${oc.env:...}`) or a
+command-line override.
+:::
 
 ```text title="$ python my_app.py hydra.mode=MULTIRUN db=mysql,postgresql schema=warehouse,support,school"
 [2021-01-20 17:25:03,317][HYDRA] Launching 6 jobs locally

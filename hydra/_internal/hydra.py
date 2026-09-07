@@ -5,7 +5,7 @@ import string
 import sys
 from argparse import ArgumentParser
 from collections import defaultdict
-from typing import Any, Callable, DefaultDict, List, Optional, Sequence, Type, Union
+from typing import Any, Callable, DefaultDict, List, Optional, Sequence, Tuple, Type, Union
 
 from omegaconf import (
     MISSING,
@@ -37,6 +37,9 @@ from hydra.plugins.config_source import ConfigSource
 from hydra.plugins.launcher import Launcher
 from hydra.plugins.search_path_plugin import SearchPathPlugin
 from hydra.plugins.sweeper import Sweeper
+from hydra.core.override_parser.overrides_parser import OverridesParser
+from hydra.errors import OverrideParseException
+from hydra.plugins.config_source import ConfigLoadError
 from hydra.types import HydraContext, RunMode, TaskFunction
 
 from ..core.default_element import DefaultsTreeNode, InputDefault
@@ -45,6 +48,68 @@ from .config_loader_impl import ConfigLoaderImpl
 from .utils import create_automatic_config_search_path
 
 log: Optional[logging.Logger] = None
+
+
+def _coerce_run_mode(value: Any) -> Optional[RunMode]:
+    if value is None:
+        return None
+    if isinstance(value, RunMode):
+        return value
+    if isinstance(value, str):
+        try:
+            return RunMode[value]
+        except KeyError:
+            return None
+    return None
+
+
+def _mode_from_overrides(overrides: List[str]) -> Tuple[bool, Optional[RunMode]]:
+    """Return (found, mode) for a hydra.mode override.
+
+    ``found`` is True if any override targeted ``hydra.mode`` (including deletes).
+    """
+    try:
+        parsed = OverridesParser.create().parse_overrides(overrides)
+    except OverrideParseException:
+        return False, None
+
+    found = False
+    mode: Optional[RunMode] = None
+    for override in parsed:
+        if override.key_or_group != "hydra.mode":
+            continue
+        found = True
+        if override.is_delete():
+            mode = None
+        else:
+            mode = _coerce_run_mode(override.value())
+    return found, mode
+
+
+def _mode_from_primary_config(
+    config_loader: ConfigLoader, config_name: Optional[str]
+) -> Optional[RunMode]:
+    """Read hydra.mode from the primary config file only (no defaults traversal)."""
+    if config_name is None:
+        return None
+    if not isinstance(config_loader, ConfigLoaderImpl):
+        return None
+    try:
+        loaded = config_loader.repository.load_config(config_path=config_name)
+    except ConfigLoadError:
+        return None
+    if loaded is None:
+        return None
+    mode_node = OmegaConf.select(loaded.config, "hydra.mode", default=None)
+    if mode_node is None:
+        return None
+    # Resolve self-contained interpolations such as ${oc.env:...} without composing.
+    try:
+        cfg = OmegaConf.create({"hydra": {"mode": mode_node}})
+        OmegaConf.resolve(cfg)
+        return _coerce_run_mode(cfg.hydra.mode)
+    except Exception:
+        return _coerce_run_mode(mode_node)
 
 
 def _resolve_node_interpolations(cfg: Any) -> None:
@@ -126,17 +191,15 @@ class Hydra:
         config_name: Optional[str],
         overrides: List[str],
     ) -> Any:
-        try:
-            cfg = self.compose_config(
-                config_name=config_name,
-                overrides=overrides,
-                with_log_configuration=False,
-                run_mode=RunMode.MULTIRUN,
-                validate_sweep_overrides=False,
-            )
-            return cfg.hydra.mode
-        except Exception:
-            return None
+        """Discover hydra.mode without a full compose probe (#3440).
+
+        Prefer a command-line ``hydra.mode`` override; otherwise read the primary
+        config file only. Returns None when unset so flag-based dispatch applies.
+        """
+        found, mode = _mode_from_overrides(overrides)
+        if found:
+            return mode
+        return _mode_from_primary_config(self.config_loader, config_name)
 
     def run(
         self,
